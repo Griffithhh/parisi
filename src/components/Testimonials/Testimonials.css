@@ -1,0 +1,163 @@
+.tlo {
+  background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.8)), url('../../assets/tlo.jpg');
+  background-size: cover;
+}
+.fire{
+  width: 172px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  opacity: 0.7;
+ top: -20px;
+  position: relative;
+}
+.no-slide{
+  text-transform: uppercase;
+  opacity: 0.9;
+    color: darkred;
+    display: block;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+   margin: auto;
+  padding: -29px;
+}
+.testimonials {
+  margin: 80px auto;
+  padding: 40px 100px;
+  position: relative;
+  overflow: hidden; /* Скрыть выходящие за границы элементы */
+}
+
+.next-btn, .back-btn {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: red;
+  z-index: 1; /* Поверх всех остальных элементов */
+}
+
+.back-btn {
+  left: 3%;
+}
+
+.next-btn {
+  right: 3%;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  transition: transform 1s;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* 200% чтобы было видно два слайда */
+}
+
+.slider ul li {
+  list-style: none;
+  flex: 0 0 50%; /* Каждый слайд занимает 50% ширины контейнера */
+  padding: 20px;
+  box-sizing: border-box; /* Учитывать padding при расчете ширины */
+}
+
+.slide {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: #676767;
+  line-height: 1.4;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.slide .img {
+  font-size: 40px;
+  margin-right: 10px;
+  border-radius: 4px 0 0 4px;
+  border: red;
+}
+
+.user-info {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.user-info h3 {
+  color: red;
+}
+
+.slide p {
+  margin: 30px;
+}
+@media (max-width: 800px) {
+  .tlo{
+
+  }
+    .testimonials{
+
+    }
+    .next-btn, .back-btn{
+        padding: 10px;
+        width: 35px;
+    }
+    .testimonials ul li{
+        padding: 10px;
+    }
+    .slide img{
+        padding: 10px;
+    }
+    .slide .img{
+
+        width: 50px;
+        border: 3px solid #212EA0;
+    }
+
+}
+
+@media (max-width: 700px) {
+  .tlo {
+  background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.8)), url('../../assets/tlo.jpg');
+  background-size: cover;
+    width: 100%;
+}
+    .user-info{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .user-info h3{
+        font-size: 16px;
+    }
+    .slider p{
+       font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+  .tlo {
+  background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.8)), url('../../assets/tlo.jpg');
+  background-size: cover;
+    width: 100%;
+}
+    .user-info{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .user-info h3{
+        font-size: 16px;
+    }
+    .slider p{
+       font-size: 12px;
+    }
+}

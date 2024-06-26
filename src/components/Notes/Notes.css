@@ -1,0 +1,74 @@
+.notes{
+    margin: 90px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        padding-left: 10%;
+     padding-right: 10%;
+}
+
+.note img{
+    opacity: 0.8;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.note{
+
+    flex-basis: 31%;
+    position: relative;
+
+}
+
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+        background: rgba(181, 8, 8, 0.38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #F5F5F5;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+   transition: 0.4s;
+
+}
+
+.caption .note_icon_1{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.caption .note_icon_2{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.caption .note_icon_3{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#f:hover .caption{
+    opacity: 1;
+     padding-top: 0;
+}
+
+#s:hover .caption{
+    opacity: 1;
+     padding-top: 0;
+   background: rgba(139, 69, 19, 0.38);
+}
+#d:hover .caption{
+    opacity: 1;
+     padding-top: 0;
+   background: rgba(128, 128, 128, 0.38);
+}
